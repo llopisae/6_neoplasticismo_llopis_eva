@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style type="text/css">
+        :root{
+            --verde: #9ed37c;
+            --amarillo:#d8d881;
+            --morado:#dc80e7;
+            --gris: #999ca1;
+        }
+        .container{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(21, 1fr);
+            grid-template-rows: repeat(16, 100px);
+        }
+        .container>div{
+            background-color:rgb(169, 233, 40);
+        }
+        body{
+                background-color:rgb(230, 176, 224);
+            }
+        #e1{
+            background-color: var(--verde);
+            grid-column: 2/2;
+            grid-row: 7/11;
+        }
+        #e2{
+            background-color: var(--verde);
+            grid-column: 5/6;
+            grid-row: 5/5;
+        }
+        #e3{
+            background-color: var(--verde);
+            grid-column: 8/8;
+            grid-row: 6/10;
+        }
+        #e4{
+            background-color: var(--verde);
+            grid-column: 11/13;
+            grid-row: 10/10;
+        }
+        #e5{
+            background-color: var(--verde);
+            grid-column: 17/17;
+            grid-row: 13/16;
+        }
+        #e6{
+            background-color: var(--verde);
+            grid-column: 16/16;
+            grid-row: 4/8;
+        }
+        #e7{
+            background-color: var(--amarillo);
+            grid-column: 3/3;
+            grid-row: 4/5;
+        }
+        #e8{
+            background-color: var(--amarillo);
+            grid-column: 4/4;
+            grid-row: 8/10;
+        }
+        #e9{
+            background-color: var(--amarillo);
+            grid-column: 10/10;
+            grid-row: 13/13;
+        }
+        #e10{
+            background-color: var(--amarillo);
+            grid-column: 11/11;
+            grid-row: 5/8;
+        }
+        #e11{
+            background-color: var(--amarillo);
+            grid-column: 10/13;
+            grid-row: 15/15;
+        }
+        #e12{
+            background-color: var(--amarillo);
+            grid-column: 16/16;
+            grid-row: 4/8;
+        }
+        #e13{
+            background-color: var(--amarillo);
+            grid-column: 19/19;
+            grid-row: 13/16;
+        }
+        #e14{
+            background-color: var(--gris);
+            grid-column: 4/7;
+            grid-row: 12/12;
+        }
+        #e15{
+            background-color: var(--gris);
+            grid-column: 5/5;
+            grid-row: 2/2;
+        }
+        #e16{
+            background-color: var(--gris);
+            grid-column: 6/6;
+            grid-row: 7/8;
+        }
+        #e17{
+            background-color: var(--gris);
+            grid-column: 7/8;
+            grid-row: 14/15;
+        }
+        #e18{
+            background-color: var(--gris);
+            grid-column: 12/12;
+            grid-row: 12/12;
+        }
+        #e19{
+            background-color: var(--gris);
+            grid-column: 13/13;
+            grid-row: 4/5;
+        }
+        #e20{
+            background-color: var(--gris);
+            grid-column: 16/17;
+            grid-row: 14/15;
+        }
+        #e21{
+            background-color: var(--gris);
+            grid-column: 20/20;
+            grid-row: 2/6;
+        }
+        #e22{
+            background-color: var(--morado);
+            grid-column: 3/6;
+            grid-row: 14/14;
+        }
+        #e23{
+            background-color: var(--morado);
+            grid-column: 6/6;
+            grid-row: 10/10;
+        }
+        #e24{
+            background-color: var(--morado);
+            grid-column: 7/8;
+            grid-row: 3/3;
+        }
+        #e25{
+            background-color: var(--morado);
+            grid-column: 13/14;
+            grid-row: 7/7;
+        }
+        #e26{
+            background-color: var(--morado);
+            grid-column: 15/15;
+            grid-row: 2/2;
+        }
+        #e27{
+            background-color: var(--morado);
+            grid-column: 15/15;
+            grid-row: 10/11;
+        }
+        #e28{
+            background-color: var(--morado);
+            grid-column: 19/21;
+            grid-row: 11/11;
+        }
+                
+        @media (max-width: 1024px){
+            body{
+                background-color: rgb(255, 134, 213);
+            }
+            .container>div{
+                background-color:rgb(8, 33, 80);
+            }
+            .container{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(16, 100px);
+        }
+        #e1{
+            background-color: var(--verde);
+            grid-column: 2/2;
+            grid-row: 7/11;
+        }
+        #e2{
+            background-color: var(--verde);
+            grid-column: 4/5;
+            grid-row: 5/5;
+        }
+        #e3{
+            background-color: var(--verde);
+            grid-column: 7/7;
+            grid-row: 6/10;
+        }
+        #e4{
+            background-color: var(--verde);
+            grid-column: 8/9;
+            grid-row: 9/9;
+        }
+        #e5{
+            background-color: var(--verde);
+            grid-column: 11/11;
+            grid-row: 10/11;
+        }
+        #e6{
+            background-color: var(--verde);
+            grid-column: 12/12;
+            grid-row: 8/8;
+        }
+        #e7{
+            background-color: var(--amarillo);
+            grid-column: 3/3;
+            grid-row: 4/5;
+        }
+        #e8{
+            background-color: var(--amarillo);
+            grid-column: 4/4;
+            grid-row: 8/10;
+        }
+        #e9{
+            background-color: var(--amarillo);
+            grid-column: 8/8;
+            grid-row: 13/13;
+        }
+        #e10{
+            background-color: var(--amarillo);
+            grid-column: 8/8;
+            grid-row: 5/8;
+        }
+        #e11{
+            background-color: var(--amarillo);
+            grid-column: 7/10;
+            grid-row: 15/15;
+        }
+        #e12{
+            background-color: var(--amarillo);
+            grid-column: 11/11;
+            grid-row: 4/8;
+        }
+        #e13{
+            background-color: var(--amarillo);
+            grid-column: 12/12;
+            grid-row: 13/16;
+        }
+        #e14{
+            background-color: var(--gris);
+            grid-column: 3/6;
+            grid-row: 12/12;
+        }
+        #e15{
+            background-color: var(--gris);
+            grid-column: 4/4;
+            grid-row: 2/2;
+        }
+        #e16{
+            background-color: var(--gris);
+            grid-column: 5/5;
+            grid-row: 7/8;
+        }
+        #e17{
+            background-color: var(--gris);
+            grid-column: 5/6;
+            grid-row: 15/16;
+        }
+        #e18{
+            background-color: var(--gris);
+            grid-column: 8/8;
+            grid-row: 12/12;
+        }
+        #e19{
+            background-color: var(--gris);
+            grid-column: 9/9;
+            grid-row: 4/5;
+        }
+        #e20{
+            background-color: var(--gris);
+            grid-column: 11/11;
+            grid-row: 15/16;
+        }
+        #e21{
+            background-color: var(--gris);
+            grid-column: 12/12;
+            grid-row: 2/6;
+        }
+        #e22{
+            background-color: var(--morado);
+            grid-column: 2/4;
+            grid-row: 14/14;
+        }
+        #e23{
+            background-color: var(--morado);
+            grid-column: 5/5;
+            grid-row: 10/10;
+        }
+        #e24{
+            background-color: var(--morado);
+            grid-column: 5/6;
+            grid-row: 3/3;
+        }
+        #e25{
+            background-color: var(--morado);
+            grid-column: 9/10;
+            grid-row: 7/7;
+        }
+        #e26{
+            background-color: var(--morado);
+            grid-column: 10/10;
+            grid-row: 2/2;
+        }
+        #e27{
+            background-color: var(--morado);
+            grid-column: 8/10;
+            grid-row: 10/10;
+        }
+        #e28{
+            background-color: var(--morado);
+            grid-column: 12/12;
+            grid-row: 10/12;
+        }
+        }
+        @media (max-width: 600px){
+            body{
+                background-color:rgb(70, 17, 67);
+            }
+            .container>div{
+                background-color:rgb(169, 188, 227);
+            }
+            .container{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(16, 100px);
+        }
+        #e1{
+            background-color: var(--verde);
+            grid-column: 1/1;
+            grid-row: 7/11;
+        }
+        #e2{
+            background-color: var(--verde);
+            grid-column: 3/4;
+            grid-row: 5/5;
+        }
+        #e3{
+            background-color: var(--verde);
+            grid-column: 4/4;
+            grid-row: 7/10;
+        }
+        #e4{
+            background-color: var(--verde);
+            grid-column: 5/5;
+            grid-row: 9/9;
+        }
+        #e5{
+            background-color: var(--verde);
+            grid-column: 7/7;
+            grid-row: 10/11;
+        }
+        #e6{
+            background-color: var(--verde);
+            grid-column: 8/8;
+            grid-row: 8/8;
+        }
+        #e7{
+            background-color: var(--amarillo);
+            grid-column: 2/2;
+            grid-row: 4/5;
+        }
+        #e8{
+            background-color: var(--amarillo);
+            grid-column: 2/2;
+            grid-row: 8/10;
+        }
+        #e9{
+            background-color: var(--amarillo);
+            grid-column: 5/5;
+            grid-row: 5/8;
+        }
+        #e10{
+            background-color: var(--amarillo);
+            grid-column: 5/5;
+            grid-row: 13/13;
+        }
+        #e11{
+            background-color: var(--amarillo);
+            grid-column: 4/7;
+            grid-row: 14/14;
+        }
+        #e12{
+            background-color: var(--amarillo);
+            grid-column: 7/7;
+            grid-row: 4/8;
+        }
+        #e13{
+            background-color: var(--amarillo);
+            grid-column: 8/8;
+            grid-row: 13/16;
+        }
+        #e14{
+            background-color: var(--gris);
+            grid-column: 3/3;
+            grid-row: 2/2;
+        }
+        #e15{
+            background-color: var(--gris);
+            grid-column: 3/3;
+            grid-row: 7/8;
+        }
+        #e16{
+            background-color: var(--gris);
+            grid-column: 1/4;
+            grid-row: 12/12;
+        }
+        #e17{
+            background-color: var(--gris);
+            grid-column: 2/3;
+            grid-row: 14/15;
+        }
+        #e18{
+            background-color: var(--gris);
+            grid-column: 6/6;
+            grid-row: 12/12;
+        }
+        #e19{
+            background-color: var(--gris);
+            grid-column: 6/6;
+            grid-row: 4/5;
+        }
+        #e20{
+            background-color: var(--gris);
+            grid-column: 8/8;
+            grid-row: 2/6;
+        }
+        #e21{
+            background-color: var(--gris);
+            grid-column: 7/7;
+            grid-row: 13/13;
+        }
+        #e22{
+            background-color: var(--morado);
+            grid-column: 1/3;
+            grid-row: 13/13;
+        }
+        #e23{
+            background-color: var(--morado);
+            grid-column: 3/3;
+            grid-row: 10/10;
+        }
+        #e24{
+            background-color: var(--morado);
+            grid-column: 4/5;
+            grid-row: 3/3;
+        }
+        #e25{
+            background-color: var(--morado);
+            grid-column: 6/6;
+            grid-row: 7/7;
+        }
+        #e26{
+            background-color: var(--morado);
+            grid-column: 7/7;
+            grid-row: 2/2;
+        }
+        #e27{
+            background-color: var(--morado);
+            grid-column: 5/6;
+            grid-row: 10/10;
+        }
+        #e28{
+            background-color: var(--morado);
+            grid-column: 8/8;
+            grid-row: 10/12;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="e1">e1</div>
+        <div id="e2">e2</div>
+        <div id="e3">e3</div>
+        <div id="e4">e4</div>
+        <div id="e5">e5</div>
+        <div id="e6">e6</div>
+        <div id="e7">e7</div>
+        <div id="e8">e8</div>
+        <div id="e9">e9</div>
+        <div id="e10">e10</div>
+        <div id="e11">e11</div>
+        <div id="e12">e12</div>
+        <div id="e13">e13</div>
+        <div id="e14">e14</div>
+        <div id="e15">e15</div>
+        <div id="e16">e16</div>
+        <div id="e17">e17</div>
+        <div id="e18">e18</div>
+        <div id="e19">e19</div>
+        <div id="e20">e20</div>
+        <div id="e21">e21</div>
+        <div id="e22">e22</div>
+        <div id="e23">e23</div>
+        <div id="e24">e24</div>
+        <div id="e25">e25</div>
+        <div id="e26">e26</div>
+        <div id="e27">e27</div>
+        <div id="e28">e28</div>
+    </div>
+</body>
+</html>
